@@ -64,7 +64,9 @@ footer {
 
 .cover::before {
     content: '';
-    position: absolute; top: 0; left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -244,13 +246,13 @@ footer {
 
 .about__logo {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     width: 240px;
     height: 240px;
     margin: 0 auto;
     border-radius: 50%;
-    background-color: #000;     
+    background-color: #000;
 }
 
 .about__logo-image {
@@ -294,8 +296,7 @@ footer {
     white-space: nowrap;
 }
 
-.footer__menu-list
-{
+.footer__menu-list {
     font-size: 18px;
     text-align: center;
     list-style: none;
