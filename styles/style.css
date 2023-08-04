@@ -1,6 +1,8 @@
-header,
-section,
-footer {
+.header,
+.cover,
+.lots,
+.about,
+.footer {
     width: 1440px;
     margin: auto;
     padding-right: 50px;
@@ -44,14 +46,13 @@ footer {
 }
 
 .address {
-    width: 240px;
+    max-width: 240px;
     margin-left: auto;
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
     line-height: 24.3px; /* 135% */
     text-underline-offset: 4px;
-    white-space: nowrap;
 }
 
 .cover {
@@ -95,8 +96,11 @@ footer {
 }
 
 .aligned-text_center {
-    line-height: 130%;
     text-align: center;
+}
+
+.aligned-text_center-line-height {
+    line-height: 130%;
 }
 
 .aligned-text_right {
@@ -131,11 +135,12 @@ footer {
     height: 52px;
     border: 1px solid #FFF;
     color: #FFF;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 22px;
     text-transform: uppercase;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .lots {
@@ -177,6 +182,8 @@ footer {
     justify-content: space-between;
     height: 100%;
     padding: 50px 40px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 .card::before {
@@ -192,20 +199,14 @@ footer {
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
 }
 
 .card__title {
@@ -288,12 +289,12 @@ footer {
 }
 
 .footer__address {
+    max-width: 240px;
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
     line-height: 24.3px; /* 135% */
     text-underline-offset: 4px;
-    white-space: nowrap;
 }
 
 .footer__menu-list {
@@ -309,19 +310,11 @@ footer {
 .footer__social-list {
     display: flex;
     justify-content: space-between;
-    width: 240px;
-    height: 48px;
+    gap: 48px;
+    min-height: 48px;
     list-style: none;
 }
 
-.footer__social-icon-yt {
-    height: 100%;
-}
-
-.footer__social-icon-vk {
-    height: 100%;
-}
-
-.footer__social-icon-pinterest {
-    height: 100%;
+.footer__social-icon {
+    height: 48px;
 }
